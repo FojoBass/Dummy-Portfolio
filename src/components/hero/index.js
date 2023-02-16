@@ -7,7 +7,9 @@ const Hero = () => {
 
  function handleExploreClick(e) {
   rippleEff(e);
-  handleNavClick(e);
+  setTimeout(() => {
+   handleNavClick(e);
+  }, 1000)
  }
 
  return (
