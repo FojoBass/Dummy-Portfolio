@@ -1,0 +1,65 @@
+.hero-sect {
+ width: 100%;
+ height: 80vh;
+ background: url('/src/assets/hero-img.jpg');
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+ position: relative;
+ z-index: 1;
+}
+
+.hero-sect:after {
+ content: '';
+ width: 100%;
+ height: 100%;
+ background-color: black;
+ opacity: .3;
+ position: absolute;
+ top: 0;
+ left: 0;
+ z-index: -1;
+}
+
+.hero-wrapper {
+ height: 70vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
+
+.hero-wrapper h1 {
+ font-size: 4rem;
+ text-transform: capitalize;
+ text-align: center;
+ color: var(--clr3);
+}
+
+.explore-btn {
+ background-color: #000000c2;
+ font-size: var(--mid-fnt);
+ text-transform: uppercase;
+ margin-top: 50px;
+ padding: 10px 30px;
+ color: var(--clr5-tint);
+ letter-spacing: .1rem;
+ border-radius: 8px;
+ transition: var(--fast-trans);
+ position: relative;
+ overflow: hidden;
+}
+
+.explore-btn:hover {
+ background-color: #000;
+}
+
+@media screen and (min-width: 1000px) {
+ .hero-sect {
+  height: 100vh;
+ }
+
+ .hero-wrapper {
+  height: 100vh;
+ }
+}

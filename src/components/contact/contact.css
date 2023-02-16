@@ -1,0 +1,145 @@
+#contact {
+ padding-bottom: 20px;
+}
+
+.contact-wrapper {
+ background-color: var(--bg-sub);
+ max-width: 500px;
+}
+
+.contact-details,
+.contact-form-wrapper {
+ margin-bottom: 30px;
+}
+
+#contact .heading-title {
+ text-transform: capitalize;
+ font-size: var(--sml-fnt);
+ margin-bottom: 20px;
+ letter-spacing: .1rem;
+ color: var(--clr5-shd2);
+}
+
+.contact-detail {
+ display: flex;
+ align-items: center;
+ color: var(--clr5-shd);
+}
+
+.contact-detail:not(.contact-detail:last-child) {
+ margin-bottom: 10px;
+}
+
+#contact .icon-wrapper {
+ background-color: var(--clr5-tint);
+ font-size: var(--sml-fnt);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 40px;
+ height: 40px;
+ margin-right: 20px;
+}
+
+.detail {
+ font-size: var(--xsml-fnt);
+ flex-basis: 60%;
+}
+
+.contact-detail:first-of-type p {
+ text-transform: capitalize;
+}
+
+.contact-form {
+ display: flex;
+ flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+ background-color: var(--clr5-tint);
+ margin-bottom: 10px;
+ padding: 10px 20px;
+ font-size: var(--xsml-fnt);
+ color: var(--clr5-shd);
+ transition: ease all var(--mid-trans);
+ outline: 0.5px solid transparent;
+}
+
+.contact-form textarea {
+ resize: none;
+ border: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+ outline-color: var(--clr5);
+ border-radius: 5px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+ color: #57391b94;
+}
+
+.contact-submit-btn {
+ background-color: rgba(0, 0, 0, 0.719);
+ width: 200px;
+ height: 40px;
+ margin: 10px auto 0;
+ text-transform: uppercase;
+ color: var(--clr3);
+ justify-content: center;
+ align-items: center;
+ letter-spacing: .1rem;
+ transition: ease background-color var(--fast-trans);
+ overflow: hidden;
+ position: relative;
+}
+
+.contact-submit-btn:hover {
+ background-color: black;
+}
+
+.contact-bottom {
+ position: relative;
+}
+
+.contact-bottom iframe {
+ width: 100%;
+ display: block;
+}
+
+.contact-bottom:after {
+ content: '';
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ top: 0;
+ left: 0;
+ opacity: .2;
+ background-color: #000;
+ pointer-events: none;
+}
+
+@media screen and (min-width: 800px) {
+ .contact-wrapper {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+ .contact-top,
+ .contact-bottom {
+  flex-basis: 49%;
+ }
+
+ .contact-form-wrapper {
+  margin-bottom: 0;
+ }
+
+ .contact-bottom iframe {
+  height: 100%;
+ }
+}

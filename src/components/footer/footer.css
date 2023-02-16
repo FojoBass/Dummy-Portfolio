@@ -1,0 +1,10 @@
+#footer {
+ background-color: #241405;
+ padding: 30px 0;
+}
+
+#footer p {
+ text-align: center;
+ color: var(--clr3);
+ font-size: var(--sml-fnt);
+}
