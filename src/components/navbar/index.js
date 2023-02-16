@@ -7,9 +7,9 @@ const Navbar = () => {
 
  useEffect(() => {
   const navHeight = navRef.current.getBoundingClientRect().height;
-  window.onscroll = () => {
+  window.addEventListener('scroll', () => {
    navRef.current.classList.toggle('sticked', window.scrollY > navHeight);
-  }
+  })
  }, [])
  return (
   <nav id="navbar" className={`${isSidebarOpen ? 'overlay' : ''}`} ref={navRef}>

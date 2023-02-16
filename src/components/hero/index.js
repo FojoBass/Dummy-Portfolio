@@ -3,10 +3,11 @@ import './hero.css';
 import { useGlobalContext } from '../../context'
 
 const Hero = () => {
- const { rippleEff } = useGlobalContext();
+ const { rippleEff, handleNavClick } = useGlobalContext();
 
  function handleExploreClick(e) {
   rippleEff(e);
+  handleNavClick(e);
  }
 
  return (
@@ -17,7 +18,7 @@ const Hero = () => {
      <h1>
       <span>welcome</span> <span>to</span> <span>lorem</span>
      </h1>
-     <button className="explore-btn" onClick={handleExploreClick}>explore</button>
+     <button className="explore-btn" onClick={handleExploreClick} data-sect='services'>explore</button>
     </div>
    </article>
   </section>
