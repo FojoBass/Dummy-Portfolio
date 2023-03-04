@@ -140,6 +140,7 @@ a,
  transition: ease opacity var(--mid-trans), ease background-color var(--fast-trans);
  visibility: hidden;
  overflow: hidden;
+ z-index: 10;
 }
 
 #go-up:hover {
